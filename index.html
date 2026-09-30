@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Next Meeting 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <main class="container">
+    <section class="screen active" id="screen1">
+      <div class="heart">💜</div>
+      <p class="small">A little surprise for you...</p>
+      <h1>Hey DII ❤️</h1>
+      <p>Next time we meet,<br>I have something special planned.</p>
+      <button onclick="nextScreen()">Open Surprise ✨</button>
+    </section>
+
+    <section class="screen" id="screen2">
+      <div class="emoji">🥹</div>
+      <p class="small">One little question...</p>
+      <h2>Are you ready for<br>our next meeting?</h2>
+      <button onclick="nextScreen()">YES ❤️</button>
+    </section>
+
+    <section class="screen" id="screen3">
+      <p class="small">Because this time...</p>
+      <h2>I don't want our meeting to be just another meeting.</h2>
+      <div class="line"></div>
+      <p>Let's make one more beautiful memory together. ✨</p>
+      <button onclick="nextScreen()">Show My Plans 🌙</button>
+    </section>
+
+    <section class="screen plans" id="screen4">
+      <p class="small">OUR NEXT MEETING 💜</p>
+      <h2>Little plans, big memories.</h2>
+
+      <div class="card">
+        <span>01</span>
+        <div><b>Just You & Me ☕</b><p>Coffee, favourite food and unlimited talking.</p></div>
+      </div>
+
+      <div class="card">
+        <span>02</span>
+        <div><b>A Little Walk 🌆</b><p>Just walking together and enjoying our time.</p></div>
+      </div>
+
+      <div class="card">
+        <span>03</span>
+        <div><b>One Memory 📸</b><p>Let's take one photo that we'll smile at later.</p></div>
+      </div>
+
+      <div class="card secret">
+        <span>04</span>
+        <div><b>Secret Surprise 🤫</b><p>This one... I'll tell you only when we meet.</p></div>
+      </div>
+
+      <button onclick="nextScreen()">One Last Thing ❤️</button>
+    </section>
+
+    <section class="screen final" id="screen5">
+      <div class="big-heart">❤️</div>
+      <p class="small">FOR YOU, JANU BY SANDY</p>
+      <h2>I don't need a perfect place.</h2>
+      <p class="message">I just need you with me.<br><br>
+      So let's meet, forget everything for a while,<br>
+      and make our own little world. 🫶</p>
+      <h1>Are you ready? 💜</h1>
+      <button onclick="finalSurprise()">YES, I'M READY ✨</button>
+      <div id="finalMessage"></div>
+    </section>
+  </main>
+
+  <div id="hearts"></div>
+  <script src="script.js"></script>
+</body>
+</html>
